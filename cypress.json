@@ -1,0 +1,11 @@
+{
+  "projectId": "kkzjx5",
+  "reporter": "mochawesome",
+  "reporterOptions":{
+    "reportDir": "cypress/report/mochaawesome-report",
+    "overwrite": true,
+    "html": true, 
+    "json": true,
+    "timestamp":"mmddyyyy_HHMMss"
+  }
+}
