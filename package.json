@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run SamplePocTestBasic_spec.js"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test": "cypress run SamplePocTestBasic_spec.js",
+    "test:e2e": "vue-cli-service test:e2e"
   },
   "author": "",
   "license": "ISC",

@@ -6,6 +6,8 @@
     "overwrite": true,
     "html": true, 
     "json": true,
-    "timestamp":"mmddyyyy_HHMMss"
+    "timestamp":"mmddyyyy_HHMMss",
+    "CYPRESS_CACHE_FOLDER":"~/.cache/Cypress"
+
   }
 }
