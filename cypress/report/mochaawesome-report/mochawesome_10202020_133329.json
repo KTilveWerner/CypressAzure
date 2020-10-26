@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-20T18:33:25.706Z",
+    "end": "2020-10-20T18:33:29.553Z",
+    "duration": 3847,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "cf715b14-aad4-4cd7-911e-f432d332c716",
+      "title": "",
+      "fullFile": "cypress/integration/examples/SamplePocTestBasic_spec.js",
+      "file": "cypress/integration/examples/SamplePocTestBasic_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5fa5fda1-d40a-4820-b91a-7403a375c659",
+          "title": "Verify User is able submit Need Authorization request",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Login Test",
+              "fullTitle": "Verify User is able submit Need Authorization request Verify Login Test",
+              "timedOut": null,
+              "duration": 1482,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get('#user-name').type('standard_user');\ncy.get('#password').type('secret_sauce');\ncy.get('#login-button').click(); // cy.get('#item_5_title_link > div').click() //also you can use class name and index name",
+              "err": {},
+              "uuid": "fc4f4f82-3102-49eb-9622-d174429e0293",
+              "parentUUID": "5fa5fda1-d40a-4820-b91a-7403a375c659",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Dropdown",
+              "fullTitle": "Verify User is able submit Need Authorization request Verify Dropdown",
+              "timedOut": null,
+              "duration": 635,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://the-internet.herokuapp.com/dropdown');\ncy.get('#dropdown').select('Option 2');",
+              "err": {},
+              "uuid": "0b40ba6d-52ae-4051-82d5-4eabc62691a1",
+              "parentUUID": "5fa5fda1-d40a-4820-b91a-7403a375c659",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fc4f4f82-3102-49eb-9622-d174429e0293",
+            "0b40ba6d-52ae-4051-82d5-4eabc62691a1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2117,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochaawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "CYPRESS_CACHE_FOLDER": "~/.cache/Cypress"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

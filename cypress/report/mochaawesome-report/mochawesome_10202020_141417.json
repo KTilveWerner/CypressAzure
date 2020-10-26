@@ -1,0 +1,126 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-20T19:14:14.568Z",
+    "end": "2020-10-20T19:14:17.047Z",
+    "duration": 2479,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f06d23e3-6aaa-4ff7-a4c3-8b4c5f448e0d",
+      "title": "",
+      "fullFile": "cypress/integration/examples/alert.js",
+      "file": "cypress/integration/examples/alert.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3ecdae81-2df5-42a8-9de7-3d7e805f7958",
+          "title": "handling alerts",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Alert Type",
+              "fullTitle": "handling alerts Alert Type",
+              "timedOut": null,
+              "duration": 744,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.on('windows:alert', function (alertText) {\n  expect(alertText).eq('I am a JS Alert');\n});\ncy.contains('Click for JS Alert').click();",
+              "err": {},
+              "uuid": "f7cdd36f-c7bc-4a4c-80d4-393dffcc8a02",
+              "parentUUID": "3ecdae81-2df5-42a8-9de7-3d7e805f7958",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirm Alert Type",
+              "fullTitle": "handling alerts Confirm Alert Type",
+              "timedOut": null,
+              "duration": 262,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.on('windows:confirm', function (confirmText) {\n  return false;\n});\ncy.contains('Click for JS Confirm').click();",
+              "err": {},
+              "uuid": "b5eda092-b484-4915-811f-4b0256c8459a",
+              "parentUUID": "3ecdae81-2df5-42a8-9de7-3d7e805f7958",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f7cdd36f-c7bc-4a4c-80d4-393dffcc8a02",
+            "b5eda092-b484-4915-811f-4b0256c8459a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1006,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochaawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "CYPRESS_CACHE_FOLDER": "~/.cache/Cypress"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

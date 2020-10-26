@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-10-20T18:40:30.432Z",
+    "end": "2020-10-20T18:40:39.974Z",
+    "duration": 9542,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "916af8e9-4df7-4d77-bd41-c8009dddee00",
+      "title": "",
+      "fullFile": "cypress/integration/examples/SamplePocTestBasic_spec.js",
+      "file": "cypress/integration/examples/SamplePocTestBasic_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c82d9c51-8275-4178-8f8f-cd3c67a77686",
+          "title": "Verify User is able submit Need Authorization request",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Login Test ",
+              "fullTitle": "Verify User is able submit Need Authorization request Verify Login Test ",
+              "timedOut": null,
+              "duration": 1236,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get('#user-name').type('standard_user');\ncy.get('#password').type('secret_sauce');\ncy.get('#login-button').click(); // cy.get('#item_5_title_link > div').click() //also you can use class name and index name",
+              "err": {},
+              "uuid": "aaed72e5-fe1f-46d7-808f-f57a1492456f",
+              "parentUUID": "c82d9c51-8275-4178-8f8f-cd3c67a77686",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Login Test ",
+              "fullTitle": "Verify User is able submit Need Authorization request Verify Login Test ",
+              "timedOut": null,
+              "duration": 778,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get('#user-name').type('standard_user');\ncy.get('#password').type('secret_sauce');\ncy.get('#login-button').click(); // cy.get('#item_5_title_link > div').click() //also you can use class name and index name",
+              "err": {},
+              "uuid": "cce1e369-5159-48bf-8217-029a44aceeaa",
+              "parentUUID": "c82d9c51-8275-4178-8f8f-cd3c67a77686",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Dropdown",
+              "fullTitle": "Verify User is able submit Need Authorization request Verify Dropdown",
+              "timedOut": null,
+              "duration": 3990,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://the-internet.herokuapp.com/dropdown');\ncy.get('#dropdown').select('Option 2');",
+              "err": {},
+              "uuid": "5ef5cead-f292-4541-93bf-925dfcebe692",
+              "parentUUID": "c82d9c51-8275-4178-8f8f-cd3c67a77686",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aaed72e5-fe1f-46d7-808f-f57a1492456f",
+            "cce1e369-5159-48bf-8217-029a44aceeaa",
+            "5ef5cead-f292-4541-93bf-925dfcebe692"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6004,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochaawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "CYPRESS_CACHE_FOLDER": "~/.cache/Cypress"
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -7,6 +7,8 @@ describe('handling alerts', function(){
 
     it('Alert Type', function() {
 
+      
+
         cy.on('windows:alert', function(alertText){
             expect(alertText).eq('I am a JS Alert')
         })
@@ -15,10 +17,13 @@ describe('handling alerts', function(){
 
     it('Confirm Alert Type', function() {
 
+       
+
         cy.on('windows:confirm', function(confirmText){
             return false
         })
         cy.contains('Click for JS Confirm').click()
+
     })
 
 })

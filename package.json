@@ -6,13 +6,19 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test": "cypress run SamplePocTestBasic_spec.js",
+    "test": "cypress run SamplePocTestBasic_spec.js --record --key d41f3e1c-da07-4622-a0fc-6611fd6cada6",
     "test:e2e": "vue-cli-service test:e2e"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^5.2.0"
+    "cypress": "^5.4.0",
+    "cypress-cucumber-preprocessor": "^4.0.0",
+    "cypress-multi-reporters": "^1.2.4",
+    "mocha-junit-reporter": "^1.23.3"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   },
   "dependencies": {
     "mocha": "^8.1.3",

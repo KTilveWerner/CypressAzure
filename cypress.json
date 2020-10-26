@@ -1,13 +1,11 @@
 {
   "projectId": "kkzjx5",
-  "reporter": "mochawesome",
+  "reporter": "mocha-junit-reporter",
   "reporterOptions":{
-    "reportDir": "cypress/report/mochaawesome-report",
-    "overwrite": true,
-    "html": true, 
-    "json": true,
-    "timestamp":"mmddyyyy_HHMMss",
-    "CYPRESS_CACHE_FOLDER":"~/.cache/Cypress"
-
+    "reportDir": "cypress/reports/junit/test-results.[hash].xml",
+    "testsuitesTitle": false,
+    "testFiles": "**/*.feature",
+    "baseUrl": "https://www.saucedemo.com/",
+    "ignoreTestFiles": "*.js"
   }
 }

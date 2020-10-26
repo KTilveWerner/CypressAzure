@@ -1,0 +1,60 @@
+[
+  {
+    "description": "I want to Login to SauceDemo Site ",
+    "keyword": "Feature",
+    "name": "Test",
+    "line": 1,
+    "id": "test",
+    "tags": [],
+    "uri": "SampleCucumber.feature",
+    "elements": [
+      {
+        "id": "test;login-to-saucedemo-site",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Login to SauceDemo Site",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the Sauce Demo Page",
+            "result": {
+              "status": "undefined",
+              "duration": 46000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "I login by entering username as \"standard_user\" and password as \"cypresstutorials\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I Enter login",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I verify user has logged in",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

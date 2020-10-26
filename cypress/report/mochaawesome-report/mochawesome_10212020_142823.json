@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-10-21T19:28:16.749Z",
+    "end": "2020-10-21T19:28:23.398Z",
+    "duration": 6649,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0489586d-9921-48ec-b23a-5730ced80e5a",
+      "title": "",
+      "fullFile": "cypress/integration/examples/SamplePocTestBasic_spec.js",
+      "file": "cypress/integration/examples/SamplePocTestBasic_spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "204512d0-10f2-4a05-b24e-00af10e3d7f6",
+          "title": "Cypress Test Demo",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify Login Test for Sauce Demo Appki Positive",
+              "fullTitle": "Cypress Test Demo Verify Login Test for Sauce Demo Appki Positive",
+              "timedOut": null,
+              "duration": 4501,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var loginPage = new _LoginPage[\"default\"]();\ncy.request(this.data.QAURL);\nloginPage.getUserName().type(this.data.Username);\nloginPage.getPassword().type('secret_sauce');\nloginPage.getLoginButton().click();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `#user-name`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `#user-name`, but never found it.\n    at LoginPage.getUserName (http://localhost:51600/__cypress/tests?p=cypress/integration/examples/SamplePocTestBasic_spec.js:179:17)\n    at Context.eval (http://localhost:51600/__cypress/tests?p=cypress/integration/examples/SamplePocTestBasic_spec.js:224:15)",
+                "diff": null
+              },
+              "uuid": "21cfbf7e-9b9f-404e-bb6d-4735daf0950e",
+              "parentUUID": "204512d0-10f2-4a05-b24e-00af10e3d7f6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify Login Test ",
+              "fullTitle": "Cypress Test Demo Verify Login Test ",
+              "timedOut": null,
+              "duration": 1300,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.saucedemo.com/');\ncy.get('#user-name').type('standard_user');\ncy.get('#password').type('secret_sauce');\ncy.get('#login-button').click(); // cy.get('#item_5_title_link > div').click() //also you can use class name and index name",
+              "err": {},
+              "uuid": "51cee180-9cbc-49fb-8a6c-77368c976c2e",
+              "parentUUID": "204512d0-10f2-4a05-b24e-00af10e3d7f6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "51cee180-9cbc-49fb-8a6c-77368c976c2e"
+          ],
+          "failures": [
+            "21cfbf7e-9b9f-404e-bb6d-4735daf0950e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5801,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/report/mochaawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss",
+        "CYPRESS_BASE_URL": "https://staging.app.com",
+        "env": {
+          "QA_URL": "https://www.saucedemo.com/"
+        }
+      },
+      "version": "5.1.0"
+    }
+  }
+}
