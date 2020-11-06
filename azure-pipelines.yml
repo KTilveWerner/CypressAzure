@@ -1,0 +1,42 @@
+# Node.js with Vue
+# Build a Node.js project that uses Vue.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- master
+
+stages:
+- stage: Test_Script_1 
+
+  jobs:
+  - job: TestScript1
+    pool:
+      vmImage: macos-latest
+    steps:
+    - script: 
+        npm install
+        npm install cypress 
+    - script: 
+        npm run test1
+      displayName: 'Running Test on Chrome'
+
+- stage: Test_Script_2
+  jobs:
+  - job: TestScript2
+    pool:
+      vmImage: macos-latest
+    dependsOn: []
+    steps:
+    - script: 
+        npm install
+        npm install cypress 
+    - script: 
+        npm run test2
+      displayName: 'Running Test on Chrome'
+
+
+
+
+
+
